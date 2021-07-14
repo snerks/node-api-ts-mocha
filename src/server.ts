@@ -1,12 +1,12 @@
-import express, { Application } from "express";
-import routes from "./routes";
+import express, { Application } from 'express';
+import routes from './routes';
 
 const createServer = () => {
-  const app: Application = express();
+    const app: Application = express();
 
-  app.use(routes);
+    app.use(routes);
 
-  return app;
-}
+    return app;
+};
 
 export default createServer;
